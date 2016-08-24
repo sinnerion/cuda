@@ -1,4 +1,4 @@
-@import "bourbon"
+@import "bourbon/bourbon"
 @import "vars"
 
 *::-webkit-input-placeholder
@@ -24,10 +24,49 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
+html
+  font-size: 10px
+
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.6
-	font-family: $default-font
-	overflow-x: hidden
+  min-width: 32rem
+  position: relative
+  line-height: 1.6
+  font-family: $default-font
+  overflow-x: hidden
+  h1
+    font-weight: bold
+    font-size: 4.2rem
+    text-align: center
+    margin: 0 0 5.5rem
+  h2
+    text-align: center
+    text-transform: uppercase
+    color: $light-txt
+    font-size: 4rem
+    padding: 0 0 2.5rem
+    font-weight: bold
+    background-position: center bottom
+
+section
+  padding: 12rem 0
+
+p.sub-heading
+  color: $light-txt
+  text-align: center
+  margin: 0 0 7rem
+  font-size: 1.8rem
+
+.container
+  button.btn
+    &:focus, &:active
+      outline: none
+    font-size: 1.8rem
+    text-transform: uppercase
+    display: block
+    padding: 0 5.5rem
+    line-height: 6.6rem
+    color: $light-txt
+    @include border-radius(.6rem)
+    border: none
+    margin: 0 auto
+

@@ -1,5 +1,41 @@
-@import "bourbon"
+@import "sass/bourbon/bourbon"
 @import "sass/vars"
 @import "sass/base"
 
-//First screen styles
+header
+  background: $header-bg
+  padding:
+    top: 6rem
+    bottom: 14.5rem
+  color: $light-txt
+  .header-top
+    margin-bottom: 14.4rem
+  .header-btn
+    background: $header-btn
+    @include btn-shadow(#c86a40)
+  .main-nav
+    .navbar-default
+      border: none
+      background: transparent
+      float: right
+      .navbar-nav
+        li
+          margin-right: 1rem
+          &:last-child
+            margin-right: 0
+          &.active
+            a
+              background: $main-hover
+              &:hover
+                color: $light-txt
+          a
+            color: $light-txt
+            border-radius: .5rem
+            font-size: 1.6rem
+            text-transform: uppercase
+            line-height: 3.2rem
+            padding: 0 1.8rem
+            &:hover
+              background: $main-hover
+
+
