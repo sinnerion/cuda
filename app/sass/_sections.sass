@@ -24,6 +24,51 @@
 // Section team
 .team
   background: $team-bg
+  &-member
+    text-align: center
+    color: $blue-heading
+    font-size: 1.6rem
+    &_photo
+      margin: 0 auto 4rem
+      @include border-radius(50%)
+      max-width: 20rem
+      img
+        width: 100%
+        @include border-radius(50%)
+    &_name
+      font-size: 2rem
+      text-transform: uppercase
+      margin-bottom: 1rem
+      font-weight: bold
+    &_position
+      margin-bottom: 2.5rem
+      color: $contact-btn
+    &_intro
+      margin-bottom: 3rem
+      font-weight: 300
+    &_social
+      display: table
+      margin: 0 auto
+      font-size: 0
+      li
+        display: inline-block
+        margin-right: 1.2rem
+        &:last-child
+          margin-right: 0
+      a
+        display: block
+        width: 3.2rem
+        height: 3.2rem
+        font-size: 1rem
+        background: url("../img/icons/team-social-sprite.png") no-repeat
+        &.fb
+          background-position: 0px 0px
+        &.tw
+          background-position: -4.4rem 0px
+        &.ln
+          background-position: -8.7rem 0px
+        &.mail
+          background-position: -13.1rem 0px
   h2
     background-image: url("../img/icons/team-h2-line.png")
     background-repeat: no-repeat
