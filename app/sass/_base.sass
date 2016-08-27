@@ -34,14 +34,14 @@ body
   font-family: $default-font
   overflow-x: hidden
 
+h1
+  font-weight: bold
+  font-size: 4.2rem
+  text-align: center
+  margin: 0 0 5.5rem
 
 section
   padding: 12rem 0
-  h1
-    font-weight: bold
-    font-size: 4.2rem
-    text-align: center
-    margin: 0 0 5.5rem
   h2
     text-align: center
     text-transform: uppercase
@@ -52,7 +52,7 @@ section
     background-position: center bottom
     margin: 0 0 2rem
 
-p.sub-heading
+h3.sub-heading
   color: $light-txt
   text-align: center
   margin: 0 auto 7rem
@@ -60,16 +60,16 @@ p.sub-heading
   max-width: 70%
 
 .container
-  button.btn
-    &:focus, &:active
-      outline: none
+  .btn
     font-size: 1.8rem
     text-transform: uppercase
     display: block
-    padding: 0 5.5rem
+    max-width: 29rem
+    margin: 0 auto
     line-height: 6.6rem
     color: $light-txt
     @include border-radius(.6rem)
     border: none
-    margin: 0 auto
+    &:focus, &:active
+      outline: none
 

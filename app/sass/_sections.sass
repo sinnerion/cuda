@@ -62,26 +62,57 @@
         font-size: 1rem
         background: url("../img/icons/team-social-sprite.png") no-repeat
         &.fb
-          background-position: 0px 0px
+          background-position: .0rem .0rem
         &.tw
-          background-position: -4.4rem 0px
+          background-position: -4.4rem .0rem
         &.ln
-          background-position: -8.7rem 0px
+          background-position: -8.7rem .0rem
         &.mail
-          background-position: -13.1rem 0px
+          background-position: -13.1rem .0rem
   h2
     background-image: url("../img/icons/team-h2-line.png")
     background-repeat: no-repeat
-  h2, p.sub-heading
+  h2, h3.sub-heading
     color: $blue-heading
 
 // Section skills
 .skills
   background: $skills-bg
+  // Progressbar
+  .skill-wrapper
+    text-align: center
+  .skill-bar
+    margin: .6rem .6rem 2rem
+    display: inline-block
+    position: relative
+    text-align: center
+    line-height: 1.2
+    canvas
+      vertical-align: top
+    strong
+      position: absolute
+      font-weight: 300
+      top: 25%
+      left: 0
+      width: 100%
+      text-align: center
+      font-size: 5rem
+    strong i
+      font-style: normal
+      font-size: 3.2rem
+      font-weight: normal
+    span
+      display: block
+      font-weight: bold
+      color: $blue-heading
+      font-size: 2.4rem
+      text-transform: uppercase
+      margin-top: 1.2rem
+
   h2
     background-image: url("../img/icons/skills-h2-line.png")
     background-repeat: no-repeat
-  h2, p.sub-heading
+  h2, h3.sub-heading
     color: $blue-heading
 
 // Section portfolio
@@ -90,7 +121,7 @@
   h2
     background-image: url("../img/icons/portfolio-h2-line.png")
     background-repeat: no-repeat
-  h2, p.sub-heading
+  h2, h3.sub-heading
     color: $brown-heading
 
 // Section reviews
