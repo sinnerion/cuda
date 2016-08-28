@@ -54,6 +54,7 @@ gulp.task('libs', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/bootstrap.min.js',
 		'app/libs/circle-progress.js',
+		'app/libs/flexibility.js',
 		'app/js/common.js'
 		// 'app/libs/magnific-popup/magnific-popup.min.js'
 		])

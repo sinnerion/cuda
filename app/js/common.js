@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // Portfolio more projects
     $('.more-projects').hide();
-    $('.portfolio-btn').on('click', function(){
+    $('.portfolio').on('click', '.portfolio-btn', function(){
         $('.default-projects').toggle('slow');
         $('.more-projects').toggle('slow');
     });
