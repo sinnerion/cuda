@@ -32,8 +32,17 @@ $(document).ready(function() {
         return false;
     });
 
-    // Progressbars
+    //Form plasceholders
+    $('.js-placeholder').focus(function () {
+        $(this).next('.form-label').addClass('hidden');
+    });
+    $('.js-placeholder').blur(function () {
+        if(!$(this).val()) {
+            $(this).next('.form-label').removeClass('hidden');
+        }
+    });
 
+    // Progressbars
     $('.skill-bar').circleProgress({
         size: 160.0,
         thickness: 12,
