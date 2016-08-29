@@ -2,9 +2,10 @@ $(document).ready(function() {
 
     // Portfolio more projects
     $('.more-projects').hide();
-    $('.portfolio').on('click', '.portfolio-btn', function(){
-        $('.default-projects').toggle('slow');
+    $('.portfolio-btn').on('click', function(){
+        $(this).preventDefault();
         $('.more-projects').toggle('slow');
+        $('.default-projects').toggle('slow');
     });
 
     // Portfolio filter
