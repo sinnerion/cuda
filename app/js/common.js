@@ -3,7 +3,7 @@ $(document).ready(function() {
     // Portfolio more projects // This script sometimes gives bugs
     $('.more-projects').hide();
     $('.portfolio-btn').on('click', function(){
-        // $(this).preventDefault();
+        $(this).preventDefault();
         $('.more-projects').toggle('slow');
         $('.default-projects').toggle('slow');
     });
